@@ -30,15 +30,10 @@ const TransactionsCard = ({ addressTo, addressFrom, timestamp, message, keyword,
           {message && (
             <>
               <br />
-              <p className="text-white text-base">Message: {message}</p>
+              <a href="https://ipfs.io/ipfs/QmXMX4TkXMEqHnB9KZmKh2tjh44D8sBoqXQsX5b95ixvoC"><p className="text-white text-base">Link: Click here {message} to access the data</p></a>
             </>
           )}
         </div>
-        <img
-          src={gifUrl || url}
-          alt="nature"
-          className="w-full h-64 2xl:h-96 rounded-md shadow-lg object-cover"
-        />
         <div className="bg-black p-3 px-5 w-max rounded-3xl -mt-5 shadow-2xl">
           <p className="text-[#37c7da] font-bold">{timestamp}</p>
         </div>
